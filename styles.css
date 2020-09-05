@@ -5,6 +5,7 @@ body {
   display: flex;
   flex-direction: column;
   backdrop-filter: blur(10px);
+  -webkit-background-filter: blur(10px);
   margin: 0;
 }
 
@@ -43,4 +44,10 @@ a, a:focus, a:visited, a:hover {
   font-size: 1.5em;
   text-decoration: none;
   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 767px) {
+  h1 {
+    font-size: 15vw;
+  }
 }
